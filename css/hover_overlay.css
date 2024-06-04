@@ -1,0 +1,57 @@
+body{
+  background-image: url("studioghiblilogo.gif");
+  background-color: aqua;
+}
+h3{
+  text-indent: 80px;
+  font-size: 36px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+section{
+  display: flex;
+  width: 1200px;;
+  flex-wrap: wrap;
+  margin-left:auto;
+  margin-right: auto;
+}
+.container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width:200px;
+  height: auto;
+}
+img{
+  width:270px;
+  height:152px;
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 152px;
+  width: 270px;;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #333;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
