@@ -1,15 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 body{
-  background-image: url("studioghiblilogo.gif");
-  background-color: aqua;
+  background-image: radial-gradient(#1f2b94,#151B54);
+  color: #fff;
 }
 h3{
-  text-indent: 80px;
   font-size: 36px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:'Playfair Display', sans-serif;
+}
+.header{
+  text-align: center;
+  margin: auto;
 }
 section{
   display: flex;
-  width: 1200px;;
+  justify-content: center;
+  width: 100%;
   flex-wrap: wrap;
   margin-left:auto;
   margin-right: auto;
@@ -24,8 +30,8 @@ section{
   height: auto;
 }
 img{
-  width:270px;
-  height:152px;
+  width:320px;
+  height:180px;
 }
 
 .overlay {
@@ -35,8 +41,8 @@ img{
   bottom: 0;
   left: 0;
   right: 0;
-  height: 152px;
-  width: 270px;;
+  height: 180px;
+  width: 320px;;
   opacity: 0;
   transition: .5s ease;
   background-color: #333;
@@ -49,9 +55,39 @@ img{
 .text {
   color: white;
   font-size: 20px;
+  font-family: 'Playfair Display', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+a {
+  color: aqua;
+}
+
+p{
+  font-size: 20px;
+}
+
+.source{
+  color: white;
+  font-size: 16px;
+  font-family: 'Playfair Display', sans-serif;
+  position: absolute;
+  left: 23%;
+  text-align: center;
+}
+
+@media screen and (min-width:601px) and (max-width:800px){
+
+}
+
+@media screen and (min-width:801px) and (max-width:1140px){
+
+}
+
+@media screen and (min-width:1141px) and (max-width:1750px){
+  
 }
